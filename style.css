@@ -1,4 +1,4 @@
-/* === NAVIGATION BAR STYLES === */
+/*NAVIGATION BAR STYLES */
 
 /* Style the entire unordered list (navbar container) */
 ul {
@@ -90,7 +90,7 @@ li a:hover:not(.active):not(.signup-btn) {
 }
 
 
-/* === RESPONSIVE DESIGN: HOME PAGE === */
+/*  RESPONSIVE DESIGN: HOME PAGE */
 
 /* Tablet view adjustments */
 @media (max-width: 1024px) {
@@ -150,7 +150,7 @@ li a:hover:not(.active):not(.signup-btn) {
 }
 
 
-/* === ABOUT PAGE === */
+/*  ABOUT PAGE*/
 
 /* General tablet scaling */
 @media (max-width: 1024px) {
@@ -237,7 +237,7 @@ li a:hover:not(.active):not(.signup-btn) {
 }
 
 
-/* === MENU PAGE === */
+/*  MENU PAGE  */
 
 @media (max-width: 1024px) {
   .menu-section h2 {
@@ -292,7 +292,7 @@ li a:hover:not(.active):not(.signup-btn) {
 }
 
 
-/* === SIGN UP PAGE === */
+/*  SIGN UP PAGE */
 
 @media (max-width: 768px) {
   .login-container {
@@ -331,7 +331,7 @@ li a:hover:not(.active):not(.signup-btn) {
 }
 
 
-/* === CORNER IMAGE ADJUSTMENTS === */
+/* CORNER IMAGE ADJUSTMENTS */
 
 @media (max-width: 768px) {
   .corner-img {
@@ -354,7 +354,7 @@ li a:hover:not(.active):not(.signup-btn) {
 }
 
 
-/* === ADDITIONAL ABOUT PAGE LAYOUT TWEAKS === */
+/*  ADDITIONAL ABOUT PAGE LAYOUT TWEAKS */
 
 @media (max-width: 768px) {
   .about-section {
@@ -403,7 +403,7 @@ li a:hover:not(.active):not(.signup-btn) {
 }
 
 
-/* === PRODUCT SECTION + GALLERY FIXES === */
+/*  PRODUCT SECTION + GALLERY FIXES */
 
 @media (max-width: 768px) {
   .product-section {
@@ -439,7 +439,7 @@ li a:hover:not(.active):not(.signup-btn) {
 }
 
 
-/* === MENU ITEM GRID === */
+/* MENU ITEM GRID  */
 
 @media (max-width: 768px) {
   .menu-category {
