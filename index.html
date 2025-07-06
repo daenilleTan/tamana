@@ -1,197 +1,196 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Starbucks </title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbucks</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style type="text/css">
+  <style type="text/css">
+    /* Set the background image for the entire body */
+    body {
+      background-image: url("https://scontent.fmnl37-1.fna.fbcdn.net/v/t39.30808-6/514399348_1048440310800114_1915518784889042369_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WhIa-9bPF9sQ7kNvwHeXALa&_nc_oc=AdnEOdiS82aq1JXYUI-F7FFENLbS2QTmAu6G_7W1oZtH7DQnbnMdYBEz-vsEhfnPiX8&_nc_zt=23&_nc_ht=scontent.fmnl37-1.fna&_nc_gid=L-BofLDLwckhsnt8G3COSg&oh=00_AfPC_r2PmVaNqzWwE71B-AWw-LfBKBWOP-YNazpVtr9zDQ&oe=686D3EBA"); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 80vh;
+      margin: 0;
+    }
 
-	body{
-        background-image:url("https://scontent.fmnl37-1.fna.fbcdn.net/v/t39.30808-6/514399348_1048440310800114_1915518784889042369_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WhIa-9bPF9sQ7kNvwHeXALa&_nc_oc=AdnEOdiS82aq1JXYUI-F7FFENLbS2QTmAu6G_7W1oZtH7DQnbnMdYBEz-vsEhfnPiX8&_nc_zt=23&_nc_ht=scontent.fmnl37-1.fna&_nc_gid=L-BofLDLwckhsnt8G3COSg&oh=00_AfPC_r2PmVaNqzWwE71B-AWw-LfBKBWOP-YNazpVtr9zDQ&oe=686D3EBA"); 
-	background-size: cover;
-  	background-repeat: no-repeat;
- 	background-position: center;
- 	height: 80vh; 
-  	margin: 0;  
-	     }
-
-
-	.Home {
-		background-size: cover;
-		background-position: center;
-		height: 400px;
-		color: white;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-		padding: 40px;
-		background: rgba(38,87,56,0.5);
-	}
-
-	.Home h1 {
-		font-size: 50px;
-		
-		padding: 20px;
-		border-radius: 12px;
-		margin-bottom: 10px;
-	}
-
-	.Home p {
-		font-size: 20px;
-		background: rgba(0,0,0,0.4);
-		padding: 10px 20px;
-		border-radius: 10px;
-		margin-bottom: 15px;
-	}
-
-	.Home a {
-		background-color: #00704a;
-		color: white;
-		padding: 12px 24px;
-		text-decoration: none;
-		border-radius: 25px;
-		font-weight: bold;
-		transition: background-color 0.3s;
-	}
-
-	.Home a:hover {
-		background-color: #005c3a;
-	}
-
-	.product-section {
-  display: flex;
-  justify-content: center;
-  gap: 40px; 
-  padding: 40px 30px;
-  background-color: #ede6db;
-  flex-wrap: wrap;
-}
-
-.product-card {
-  background-color: #fdfaf6;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  width: 220px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-}
-
-.product-card img {
-  width: 100%;
-  height: 130px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 14px;
-}
-
-.product-card h3 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px; 
-  font-weight: 700;
-  color: #2e2e2e;
-  margin-bottom: 8px;
-}
-
-.product-card p {
-  font-size: 13px; 
-  color: #555;
-  margin-bottom: 16px;
-}
-
-.product-btn {
-  display: inline-block;
-  padding: 10px 22px;
-  background-color: #5c4033;
-  color: white;
-  border-radius: 25px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.product-btn:hover {
-  background-color: #4a3228;
-}
-
-  @media (max-width: 480px) {
-    .nav-right {
-      margin-left: auto;
+    /* Hero section styles */
+    .Home {
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: white;
       display: flex;
-      justify-content: flex-end;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+      background: rgba(38, 87, 56, 0.5); /* Dark overlay */
     }
 
-    .signup-btn {
-      padding: 8px 14px;
-      font-size: 14px;
-      margin-right: 6px;
+    .Home h1 {
+      font-size: 50px;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 10px;
     }
 
-    .navbar {
+    .Home p {
+      font-size: 20px;
+      background: rgba(0, 0, 0, 0.4); /* Slight dark background for readability */
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .Home a {
+      background-color: #00704a;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .Home a:hover {
+      background-color: #005c3a; /* Darker on hover */
+    }
+
+    /* Product section styling */
+    .product-section {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 30px;
+      background-color: #ede6db;
       flex-wrap: wrap;
     }
-  }
 
+    .product-card {
+      background-color: #fdfaf6;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      width: 220px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
 
-  
-</style>
+    .product-card img {
+      width: 100%;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 14px;
+    }
 
+    .product-card h3 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #2e2e2e;
+      margin-bottom: 8px;
+    }
+
+    .product-card p {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 16px;
+    }
+
+    .product-btn {
+      display: inline-block;
+      padding: 10px 22px;
+      background-color: #5c4033;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-btn:hover {
+      background-color: #4a3228;
+    }
+
+    /* Basic mobile responsiveness */
+    @media (max-width: 480px) {
+      .nav-right {
+        margin-left: auto;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .signup-btn {
+        padding: 8px 14px;
+        font-size: 14px;
+        margin-right: 6px;
+      }
+
+      .navbar {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<ul class="navbar">
-  <!-- Left: Logo and links -->
-  <div class="nav-left">
-    <li class="logo">
-     <img src="https://mcdonough.com/wp-content/uploads/2020/09/starbucks-logo-png-transparent.png" 
-           alt="Logo" class="logo-img">
+  /* Navigation bar */
+  <ul class="navbar">
+    /*  Left side: Logo and main links */
+    <div class="nav-left">
+      <li class="logo">
+        <img src="https://mcdonough.com/wp-content/uploads/2020/09/starbucks-logo-png-transparent.png" alt="Logo" class="logo-img">
       </li>
-    <li><a class="active" href="Index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="menu.html">Menu</a></li>
-  </div>
+      <li><a class="active" href="Index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+    </div>
 
-  <!-- Right: Sign Up button -->
-  <div class="nav-right">
-    <li><a class="signup-btn" href="signup.html">Sign Up</a></li>
-  </div>
-</ul>
+     /* Right side: Sign Up button */
+    <div class="nav-right">
+      <li><a class="signup-btn" href="signup.html">Sign Up</a></li>
+    </div>
+  </ul>
 
-	 <!-- Home -->
+  /* Hero Section */
   <div class="Home" id="home">
     <h1>Welcome to Starbucks Nangka</h1>
     <p>It's not just coffee. It's Starbucks</p>
-    <a href="menu.html"> See Menu </a>
-  </div>
-	
-	<section class="product-section">
-  <div class="product-card">
-    <img src="https://starbuckscard.ph/sbcard-admin/storage/app/public/menu/676/A3Kmlz7H2bKXxgotEbcsSKyKyFWP51d7OJ6ZBpPY.jpeg" alt="Foods">
-    <h3>Foods</h3>
-    <p>Delicious foods made with care and tradition.</p>
-    <a href="menu.html" class="product-btn">More Foods</a>
+    <a href="menu.html">See Menu</a>
   </div>
 
-  <div class="product-card">
-    <img src="https://starbucks.ph/seed_data/HBRE_HotBrewedCoffee.jpg" alt="Coffie">
-    <h3>Coffee</h3>
-    <p>Rich, bold flavors from the finest coffee growing regions around the world.</p>
-    <a href="menu.html" class="product-btn">More Coffees</a>
-  </div>
+   /* Featured product cards  */
+  <section class="product-section">
+    <!-- Food card -->
+    <div class="product-card">
+      <img src="https://starbuckscard.ph/sbcard-admin/storage/app/public/menu/676/A3Kmlz7H2bKXxgotEbcsSKyKyFWP51d7OJ6ZBpPY.jpeg" alt="Foods">
+      <h3>Foods</h3>
+      <p>Delicious foods made with care and tradition.</p>
+      <a href="menu.html" class="product-btn">More Foods</a>
+    </div>
 
-  <div class="product-card">
-    <img src="https://starbuckscard.ph/sbcard-admin/storage/app/public/menu/671/pplpU5Nwk2bWCxdfgUnnchkEOdYCtnWSXxaz7atV.jpeg" alt="Drinks">
-    <h3>Drinks</h3>
-    <p>Chill, sip, and enjoy your favorite drinks, made just for you.</p>
-    <a href="menu.html" class="product-btn">More Drinks</a>
-  </div>
-</section>
+    /* Coffee card  */
+    <div class="product-card">
+      <img src="https://starbucks.ph/seed_data/HBRE_HotBrewedCoffee.jpg" alt="Coffie">
+      <h3>Coffee</h3>
+      <p>Rich, bold flavors from the finest coffee growing regions around the world.</p>
+      <a href="menu.html" class="product-btn">More Coffees</a>
+    </div>
 
-
+     /* Drinks card */
+    <div class="product-card">
+      <img src="https://starbuckscard.ph/sbcard-admin/storage/app/public/menu/671/pplpU5Nwk2bWCxdfgUnnchkEOdYCtnWSXxaz7atV.jpeg" alt="Drinks">
+      <h3>Drinks</h3>
+      <p>Chill, sip, and enjoy your favorite drinks, made just for you.</p>
+      <a href="menu.html" class="product-btn">More Drinks</a>
+    </div>
+  </section>
 
 </body>
 </html>
