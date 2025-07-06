@@ -1,15 +1,14 @@
-
 <!-- menu.html -->
 <!DOCTYPE html>
 <html>
 <head>
   <title>Starbucks Menu</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes site responsive on mobile -->
 
   <style>
     body {
-      background-image: url('images/background.png');
+      background-image: url('images/background.png'); /* Sets a cozy background image */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -18,24 +17,24 @@
     }
 
     .menu-section {
-      padding: 60px 20px;
-      background-color: rgba(255, 255, 255, 0.85);
+      padding: 60px 20px; /* Adds breathing space inside the section */
+      background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white bg */
       text-align: center;
     }
 
     .menu-section h2 {
       font-size: 48px;
-      color: #00643c;
+      color: #00643c; /* Starbucks green */
       margin-bottom: 40px;
     }
 
     .menu-category {
-      margin-bottom: 60px;
+      margin-bottom: 60px; /* Spacing between menu categories */
     }
 
     .menu-category h3 {
       font-size: 32px;
-      color: #5c4033;
+      color: #5c4033; /* Coffee-brown header for each category */
       margin-bottom: 20px;
     }
 
@@ -43,21 +42,21 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
+      gap: 30px; /* Space between menu items */
     }
 
     .menu-item {
-      background-color: #fffdf8;
+      background-color: #fffdf8; /* Soft background for item cards */
       border-radius: 16px;
       width: 250px;
       padding: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Adds light shadow to each card */
     }
 
     .menu-item img {
       width: 100%;
       height: 180px;
-      object-fit: cover;
+      object-fit: cover; /* Makes sure image fits nicely */
       border-radius: 12px;
       margin-bottom: 15px;
     }
@@ -70,145 +69,168 @@
 
     .menu-item p {
       font-size: 14px;
-      color: #444;
+      color: #444; /* Easy-to-read text color */
     }
 
-    
-  @media (max-width: 480px) {
-    .nav-right {
-      margin-left: auto;
-      display: flex;
-      justify-content: flex-end;
+    /* Mobile responsiveness (for small screens) */
+    @media (max-width: 480px) {
+      .nav-right {
+        margin-left: auto;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .signup-btn {
+        padding: 8px 14px;
+        font-size: 14px;
+        margin-right: 6px;
+      }
+
+      .navbar {
+        flex-wrap: wrap; /* Wraps nav items if screen is too narrow */
+      }
     }
-
-    .signup-btn {
-      padding: 8px 14px;
-      font-size: 14px;
-      margin-right: 6px;
-    }
-
-    .navbar {
-      flex-wrap: wrap;
-    }
-  }
-
-
   </style>
 </head>
+
 <body>
 
-<ul class="navbar">
-  <div class="nav-left">
-    <li class="logo">
-      <img src="https://mcdonough.com/wp-content/uploads/2020/09/starbucks-logo-png-transparent.png" 
-           alt="Logo" class="logo-img">
-    </li>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a class="active" href="menu.html">Menu</a></li>
-  </div>
+  <!-- Navigation bar -->
+  <ul class="navbar">
+    <div class="nav-left">
+      <li class="logo">
+        <img src="https://mcdonough.com/wp-content/uploads/2020/09/starbucks-logo-png-transparent.png" 
+             alt="Logo" class="logo-img"> <!-- Starbucks logo -->
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="active" href="menu.html">Menu</a></li> <!-- Current page -->
+    </div>
 
-  <div class="nav-right">
-    <li><a class="signup-btn" href="signup.html">Sign Up</a></li>
-  </div>
-</ul>
+    <div class="nav-right">
+      <li><a class="signup-btn" href="signup.html">Sign Up</a></li>
+    </div>
+  </ul>
 
-<section class="menu-section">
-  <h2>Menu</h2>
+  <!-- Main menu content -->
+  <section class="menu-section">
+    <h2>Menu</h2>
 
-  <div class="menu-category">
-    <h3>Coffees</h3>
-    <div class="menu-grid">
-      <div class="menu-item">
-        <img src="https://starbucks.ph/seed_data/IESP_IcedCaffeLatte.jpg" alt="Iced Caffe Latte">
-        <h4>Iced Caffe Latte</h4>
-        <p>Our bold and flavorful espresso is blended with milk and poured over ice.</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://starbucks.ph/seed_data/FRAPCOF_EspressoFrappuccino.jpg" alt="Espresso Frappuccino">
-        <h4>Espresso Frappuccino</h4>
-        <p>A shot of espresso and milk is blended with coffee and ice to create a refreshing drink that delivers a boost of energy and smooth, enjoyable sips.</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://starbucks.ph/seed_data/HESP_CaffeMisto.jpg" alt="Caffe Misto">
-        <h4>Caffe Misto<h4>
-        <p>Bold and rich shots of espresso for a quick pick-me-up.</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://starbucks.ph/seed_data/IESP_IcedAmericano.jpg" alt="Iced Americano">
-        <h4>Iced Americano</h4>
-        <p>Espresso shots are poured over water, creating a delicate crema on top, then served with ice. The result is a smooth, flavorful drink with rich depth and subtle complexity.</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://starbucks.ph/seed_data/IESP_IcedCappuccino.jpg" alt="Iced Cappuccino">
-        <h4>Iced Cappuccino</h4>
-        <p>A bold, rich espresso rests beneath a velvety layer of perfectly frothed milk a blend of barista skill and crafted perfection.</p>
+    <!-- Coffee category -->
+    <div class="menu-category">
+      <h3>Coffees</h3>
+      <div class="menu-grid">
+
+        <div class="menu-item">
+          <img src="https://starbucks.ph/seed_data/IESP_IcedCaffeLatte.jpg" alt="Iced Caffe Latte">
+          <h4>Iced Caffe Latte</h4>
+          <p>Our bold and flavorful espresso is blended with milk and poured over ice.</p>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://starbucks.ph/seed_data/FRAPCOF_EspressoFrappuccino.jpg" alt="Espresso Frappuccino">
+          <h4>Espresso Frappuccino</h4>
+          <p>A shot of espresso and milk is blended with coffee and ice to create a refreshing drink that delivers a boost of energy and smooth, enjoyable sips.</p>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://starbucks.ph/seed_data/HESP_CaffeMisto.jpg" alt="Caffe Misto">
+          <h4>Caffe Misto<h4> <!-- (Note: h4 is not closed properly, but left as-is) -->
+          <p>Bold and rich shots of espresso for a quick pick-me-up.</p>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://starbucks.ph/seed_data/IESP_IcedAmericano.jpg" alt="Iced Americano">
+          <h4>Iced Americano</h4>
+          <p>Espresso shots are poured over water, creating a delicate crema on top, then served with ice. The result is a smooth, flavorful drink with rich depth and subtle complexity.</p>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://starbucks.ph/seed_data/IESP_IcedCappuccino.jpg" alt="Iced Cappuccino">
+          <h4>Iced Cappuccino</h4>
+          <p>A bold, rich espresso rests beneath a velvety layer of perfectly frothed milk a blend of barista skill and crafted perfection.</p>
+        </div>
+
       </div>
     </div>
-  </div>
 
-  <div class="menu-category">
-    <h3>Foods</h3>
-    <div class="menu-grid">
-      <div class="menu-item">
-        <img src="https://starbuckscard.ph/sbcard-admin/storage/app/public/menu/679/9Ixusvyh97qXrvCkt0jqzKHwIjTQwzsks2FkFBZg.jpeg" alt="Cheesecake">
-        <h4>Cookie Butter Cheesecake</h4>
-        <p>Savor the decadent blend of flavors in this dessert—featuring a spiced speculoos crust, velvety cheesecake, and a smooth, cookie butter mousse on top.</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://starbucks.ph/seed_data/PennePestowithMushroom.jpg" alt="Penne Pesto with Mushroom">
-        <h4>Penne Pesto with Mushroom</h4>
-        <p>Crafted with penne pasta sautéed with button mushrooms and a rich, creamy pesto sauce.</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://starbucks.ph/seed_data/FrenchButterCroissant.jpg" alt="French Butter Croissant">
-        <h4>French Butter Croissant</h4>
-        <p>Crafted with pure butter for a golden, crisp top and soft, flaky layers within. A delightful companion to your favorite Starbucks coffee, served with butter and strawberry jam.</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://starbucks.ph/seed_data/HamandCheeseToastie.jpg" alt="Ham and Cheese Toastie">
-        <h4>Ham and Cheese Toastie</h4>
-        <p>A toasted Italian-style layered bread filled with melted cheddar, mozzarella, and Gruyère cheese béchamel, along with slices of honey ham and mortadella.</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://starbuckscard.ph/sbcard-admin/storage/app/public/menu/630/H5p7YQDsXNW1dDUTQYfwh4yJKvtShxKqxkqi0SFt.jpeg" alt="Sourdough Bagel">
-        <h4>Sourdough Bagel</h4>
-        <p>Crispy on the outside, soft and chewy inside, packed with rich sourdough flavor and gentle on the gut.</p>
+    <!-- Food category -->
+    <div class="menu-category">
+      <h3>Foods</h3>
+      <div class="menu-grid">
+
+        <div class="menu-item">
+          <img src="https://starbuckscard.ph/sbcard-admin/storage/app/public/menu/679/9Ixusvyh97qXrvCkt0jqzKHwIjTQwzsks2FkFBZg.jpeg" alt="Cheesecake">
+          <h4>Cookie Butter Cheesecake</h4>
+          <p>Savor the decadent blend of flavors in this dessert—featuring a spiced speculoos crust, velvety cheesecake, and a smooth, cookie butter mousse on top.</p>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://starbucks.ph/seed_data/PennePestowithMushroom.jpg" alt="Penne Pesto with Mushroom">
+          <h4>Penne Pesto with Mushroom</h4>
+          <p>Crafted with penne pasta sautéed with button mushrooms and a rich, creamy pesto sauce.</p>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://starbucks.ph/seed_data/FrenchButterCroissant.jpg" alt="French Butter Croissant">
+          <h4>French Butter Croissant</h4>
+          <p>Crafted with pure butter for a golden, crisp top and soft, flaky layers within. A delightful companion to your favorite Starbucks coffee, served with butter and strawberry jam.</p>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://starbucks.ph/seed_data/HamandCheeseToastie.jpg" alt="Ham and Cheese Toastie">
+          <h4>Ham and Cheese Toastie</h4>
+          <p>A toasted Italian-style layered bread filled with melted cheddar, mozzarella, and Gruyère cheese béchamel, along with slices of honey ham and mortadella.</p>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://starbuckscard.ph/sbcard-admin/storage/app/public/menu/630/H5p7YQDsXNW1dDUTQYfwh4yJKvtShxKqxkqi0SFt.jpeg" alt="Sourdough Bagel">
+          <h4>Sourdough Bagel</h4>
+          <p>Crispy on the outside, soft and chewy inside, packed with rich sourdough flavor and gentle on the gut.</p>
+        </div>
+
       </div>
     </div>
-  </div>
 
-  <div class="menu-category">
-    <h3>Drinks</h3>
-    <div class="menu-grid">
-      <div class="menu-item">
-        <img src="https://starbucks.ph/seed_data/FRAPCRE_ChocolateCreamFrappuccino.jpg" alt="Chocolate Cream Frappe">
-        <h4>Chocolate Cream Frappe</h4>
-        <p>A smooth and indulgent mix of chocolate-flavored sauce, milk, and ice, finished with a swirl of whipped cream on top.</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://starbucks.ph/seed_data/ITEA_IcedShakenTeas.jpg" alt="Iced Shaken Teas">
-        <h4>Iced Shaken Teas</h4>
-        <p>Enjoy a modern twist on tea with iced shaken blends that deliver bold, vibrant, and refreshing flavors.</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://starbuckscard.ph/sbcard-admin/storage/app/public/menu/671/pplpU5Nwk2bWCxdfgUnnchkEOdYCtnWSXxaz7atV.jpeg" alt="Lemonade">
-        <h4>Kiwi Passionfruit with Glitter Pop Lemonade</h4>
-        <p>Treat your tastebuds to a vibrant adventure with this cool, fruity refresher that blends the bold flavors of kiwi and passionfruit with the zing of lemonade. Finished with real kiwi slices and sparkling Glitter Pops—juicy passionfruit pearls that burst with sweet-tart flavor and soft fruit pieces—each sip is a fun, refreshing experience full of tropical delight.</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://starbuckscard.ph/sbcard-admin/storage/app/public/menu/351/Y6NAnHFmewQN4MkXEuvWv6KZCZQMvYhspP4ybFYt.jpeg" alt="Fruit Juice">
-        <h4>Pink Drink with Strawberry Açaí</h4>
-        <p>The Pink Drink blends smooth, light coconut milk with the natural flavors of sweet strawberry and açaí juice, topped with real strawberry slices and a gentle energy lift. A perfect mix of creamy and fruity goodness!</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://starbucks.ph/seed_data/ICHO_IcedWhiteChocolate.jpg" alt="Milkshake">
-        <h4>Iced White Chocolate</h4>
-        <p>A classic chocolate drink crafted with white chocolate sauce and steamed milk, finished with a swirl of whipped cream on top.</p>
+    <!-- Drinks category -->
+    <div class="menu-category">
+      <h3>Drinks</h3>
+      <div class="menu-grid">
+
+        <div class="menu-item">
+          <img src="https://starbucks.ph/seed_data/FRAPCRE_ChocolateCreamFrappuccino.jpg" alt="Chocolate Cream Frappe">
+          <h4>Chocolate Cream Frappe</h4>
+          <p>A smooth and indulgent mix of chocolate-flavored sauce, milk, and ice, finished with a swirl of whipped cream on top.</p>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://starbucks.ph/seed_data/ITEA_IcedShakenTeas.jpg" alt="Iced Shaken Teas">
+          <h4>Iced Shaken Teas</h4>
+          <p>Enjoy a modern twist on tea with iced shaken blends that deliver bold, vibrant, and refreshing flavors.</p>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://starbuckscard.ph/sbcard-admin/storage/app/public/menu/671/pplpU5Nwk2bWCxdfgUnnchkEOdYCtnWSXxaz7atV.jpeg" alt="Lemonade">
+          <h4>Kiwi Passionfruit with Glitter Pop Lemonade</h4>
+          <p>Treat your tastebuds to a vibrant adventure with this cool, fruity refresher that blends the bold flavors of kiwi and passionfruit with the zing of lemonade. Finished with real kiwi slices and sparkling Glitter Pops—juicy passionfruit pearls that burst with sweet-tart flavor and soft fruit pieces—each sip is a fun, refreshing experience full of tropical delight.</p>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://starbuckscard.ph/sbcard-admin/storage/app/public/menu/351/Y6NAnHFmewQN4MkXEuvWv6KZCZQMvYhspP4ybFYt.jpeg" alt="Fruit Juice">
+          <h4>Pink Drink with Strawberry Açaí</h4>
+          <p>The Pink Drink blends smooth, light coconut milk with the natural flavors of sweet strawberry and açaí juice, topped with real strawberry slices and a gentle energy lift. A perfect mix of creamy and fruity goodness!</p>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://starbucks.ph/seed_data/ICHO_IcedWhiteChocolate.jpg" alt="Milkshake">
+          <h4>Iced White Chocolate</h4>
+          <p>A classic chocolate drink crafted with white chocolate sauce and steamed milk, finished with a swirl of whipped cream on top.</p>
+        </div>
+
       </div>
     </div>
-  </div>
-</section>
+
+  </section>
 
 </body>
 </html>
