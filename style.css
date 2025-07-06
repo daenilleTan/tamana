@@ -1,0 +1,516 @@
+/* Style the entire unordered list (navbar container) */
+ul {
+  list-style-type: none;
+  margin: 1px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ede6db;
+  border-radius: 20px;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ede6db;
+  border-radius: 0 0 20px 20px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Left and right nav groups */
+.nav-left,
+.nav-right {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove float from list items */
+li {
+  float: none;
+}
+
+/* Style all links */
+li a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700; /* Use bold weight */
+  color: #2b2b2b; /* Optional: dark elegant color */
+  letter-spacing: 0.5px;
+  display: block;
+  color: #2e2e2e;
+  text-align: center;
+  padding: 18px 24px;
+  text-decoration: none;
+  border-radius: 0 0 20px 20px;
+  font-size: 19px;        
+         
+}
+
+/* Hover effect */
+li a:hover:not(.active):not(.signup-btn) {
+  background-color: #e8dfd0;
+}
+
+/* Active link */
+.active {
+  background-color: #a39b89;
+}
+
+/* Logo styling */
+.logo {
+  padding: 0 16px;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+/* Sign up button */
+.signup-btn {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700; /* Use bold weight */
+  color: white;
+  letter-spacing: 0.5px;
+  background-color: #00643c;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+
+.signup-btn:hover {
+  background-color: #4a3228;
+}
+
+
+/* --- Responsive Web Design Additions --- */
+
+/* Medium screens (tablets and smaller laptops) */
+@media (max-width: 1024px) {
+  .Home h1 {
+    font-size: 38px;
+  }
+
+  .Home p {
+    font-size: 18px;
+  }
+
+  .product-card {
+    width: 220px;
+  }
+}
+
+/* Small screens (large phones, tablets) */
+@media (max-width: 768px) {
+  .Home {
+    padding: 30px;
+    height: auto;
+  }
+
+  .Home h1 {
+    font-size: 32px;
+  }
+
+  .Home p {
+    font-size: 16px;
+  }
+
+  .product-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 15px;
+  }
+
+  .product-card {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  
+/* Extra small screens (phones) */
+@media (max-width: 480px) {
+  .Home h1 {
+    font-size: 26px;
+  }
+
+  .Home p {
+    font-size: 14px;
+  }
+
+  .product-card h3 {
+    font-size: 18px;
+  }
+
+  .product-card p {
+    font-size: 12px;
+  }
+
+  .product-btn {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .about-content h2 {
+    font-size: 40px;
+  }
+
+  .about-content p {
+    font-size: 18px;
+  }
+
+  .about-btn {
+    font-size: 14px;
+  }
+}
+
+/* --- Responsive Web Design Additions for about.html --- */
+
+@media (max-width: 1024px) {
+  .about-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    height: auto;
+    text-align: center;
+  }
+
+
+  .about-content {
+    padding: 20px;
+  }
+
+  .mission-content h2 {
+    font-size: 32px;
+  }
+
+  .mission-content p {
+    font-size: 18px;
+  }
+
+  .location-content h2 {
+    font-size: 30px;
+  }
+
+  .location-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content h2 {
+    font-size: 32px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+  }
+
+  .about-btn {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+
+  .mission-section {
+    padding: 60px 20px;
+  }
+
+  .gallery-container img {
+    width: 45%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content h2 {
+    font-size: 26px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+  }
+
+  .mission-content h2 {
+    font-size: 24px;
+  }
+
+  .mission-content p {
+    font-size: 14px;
+  }
+
+  .location-content h2 {
+    font-size: 22px;
+  }
+
+  .location-content p {
+    font-size: 14px;
+  }
+
+  .gallery-container img {
+    width: 90%;
+  }
+
+  .about-btn {
+    font-size: 12px;
+    padding: 8px 18px;
+  }
+}
+
+/* --- Responsive Web Design for menu.html --- */
+
+@media (max-width: 1024px) {
+  .menu-section h2 {
+    font-size: 38px;
+  }
+
+  .menu-category h3 {
+    font-size: 28px;
+  }
+
+  .menu-item {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-section {
+    padding: 40px 15px;
+  }
+
+  .menu-section h2 {
+    font-size: 32px;
+  }
+
+  .menu-category h3 {
+    font-size: 24px;
+  }
+
+  .menu-item {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .menu-item h4 {
+    font-size: 18px;
+  }
+
+  .menu-item p {
+    font-size: 13px;
+  }
+
+ 
+}
+
+@media (max-width: 480px) {
+  .menu-section h2 {
+    font-size: 26px;
+  }
+
+  .menu-category h3 {
+    font-size: 20px;
+  }
+
+  .menu-item h4 {
+    font-size: 16px;
+  }
+
+  .menu-item p {
+    font-size: 12px;
+  }
+
+  .menu-item img {
+    height: 160px;
+  }
+}
+
+
+
+	/* --- Responsive Web Design for signup.html --- */
+
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .login-container h2 {
+    font-size: 24px;
+  }
+
+  .login-btn {
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+
+  input[type="text"], input[type="password"] {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    width: 95%;
+    padding: 25px;
+  }
+
+  .login-container h2 {
+    font-size: 22px;
+  }
+
+  .login-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  input[type="text"], input[type="password"] {
+    font-size: 14px;
+  }
+}
+
+/* Responsive adjustments for .corner-img */
+@media (max-width: 768px) {
+  .corner-img {
+    width: 90%;
+    max-width: 360px;
+    height: auto;
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .corner-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+}
+
+/* Additional adjustments for about page responsiveness */
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .about-content {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .corner-img {
+    order: -1; /* Show image before text */
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  .mission-section,
+  .location-section {
+    padding: 40px 15px;
+    text-align: center;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  .about-content h2 {
+    margin-top: 10px;
+  }
+
+  .corner-img {
+    max-width: 280px;
+    margin: 0 auto 15px auto;
+  }
+
+  .mission-content,
+  .location-content {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-card {
+    width: 90%;
+    max-width: 280px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .gallery-container img {
+    width: 45%;
+    max-width: 200px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-container img {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .menu-item {
+    width: 45%;
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-item {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+
+
+
+
+
+
+

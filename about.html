@@ -1,0 +1,221 @@
+
+<!DOCTYPE html> 
+<html>
+<head>
+	<title> Starbucks </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css">
+
+	body {
+        background-image: url('images/background.png'); 
+		background-size: cover;
+  		background-repeat: no-repeat;
+ 		background-position: center;
+ 		margin: 0;  
+	    }
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 550px;
+  padding-bottom: 40px;
+}
+
+.about-content h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #00643c;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: -40px;
+}
+
+.about-content p {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.about-btn {
+  background-color: #5c4033;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-btn:hover {
+  background-color: #4a3228;
+}
+
+.corner-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 600px;
+  height: auto;
+  z-index: 1;
+}
+
+.mission-section {
+  background-color: #ede6db ;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.mission-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-content h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #00643c;
+  margin-bottom: 30px;
+}
+
+.mission-content p {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.location-section {
+  background-color: #f6f5f0;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.location-content h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 36px;
+  color: #00643c;
+  margin-bottom: 15px;
+}
+
+.location-content p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.gallery-section {
+  padding: 50px 20px;
+  background-color: #f6f5f0;
+  text-align: center;
+}
+
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-container img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+</style>
+</head>
+<body>
+
+<ul class="navbar">
+  <div class="nav-left">
+    <li class="logo">
+     <img src="https://mcdonough.com/wp-content/uploads/2020/09/starbucks-logo-png-transparent.png" 
+           alt="Logo" class="logo-img">
+    </li>
+    <li><a href="index.html">Home</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="menu.html">Menu</a></li>
+  </div>
+
+  <div class="nav-right">
+    <li><a class="signup-btn" href="signup.html">Sign Up</a></li>
+  </div>
+</ul>
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+  <div class="about-content">
+    <h2>About Our Starbucks in Nangka</h2>
+    <p>
+      Nestled in the heart of Nangka, newly opened branch in marikina. our Starbucks store brings together the rich aroma of handcrafted coffee and the warmth of the local community. 
+      We’re more than just a coffee shop, we’re a place where friends meet, students focus, and families relax.
+    </p>
+    <p>
+      At our branch, we take pride in serving high-quality coffee, delicious pastries, and custom cakes made with passion. 
+      Whether you’re grabbing your morning cup or spending an afternoon unwinding, we’re here to make your visit special.
+    </p>
+    <div style="text-align: center;">
+      <a href="menu.html" class="about-btn">View Our Menu</a>
+    </div>
+  </div>
+
+  <img src="images/shop.png" class="corner-img" alt="Corner Image">
+</section>
+
+<!-- MISSION SECTION (now placed properly below) -->
+<section class="mission-section">
+  <div class="mission-content">
+    <h2>Our Mission</h2>
+    <p>
+      At Starbucks Nangka, our mission is to inspire and nurture the human spirit, one person, one cup, and one neighborhood at a time.
+    </p>
+    <p>
+      We are committed to ethically sourcing our coffee, caring for the environment, and fostering a warm, inclusive community space for everyone.
+    </p>
+  </div>
+</section>
+
+<section class="location-section">
+  <div class="location-content">
+    <h2>Location</h2>
+    <p>
+      J.P. Rizal cor. Japan and China St. Nangka, Marikina City
+      <br>
+      Monday to Sunday | 6:00AM - 2:00AM
+    </p>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <div class="gallery-container">
+    <img src="images/photo 1.jpg" alt="Image 1">
+    <img src="images/photo 2.jpg" alt="Image 2">
+    <img src="images/photo 3.jpg" alt="Image 3">
+    <img src="images/photo 4.jpg" alt="Image 4">
+  </div>
+</section>
+
+
+</body>
+</html>
