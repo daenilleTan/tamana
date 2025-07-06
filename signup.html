@@ -1,41 +1,43 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>Starbucks Login</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
+  <script src="script.js"></script>  <!-- Link to external JavaScript file -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
   <style>
+    /* Basic styling for the whole page */
     body {
-      background-image: url('images/background.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 100vh;
-      margin: 0;
+      background-image: url('images/background.png'); /* Coffee-themed background */
+      background-size: cover;                         /* Stretch to fill screen */
+      background-repeat: no-repeat;                   /* No repeating the image */
+      background-position: center;                    /* Center the background */
+      height: 100vh;                                  /* Full viewport height */
+      margin: 0;                                      /* Remove default margin */
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
+      display: flex;                                  /* Flex for centering */
       justify-content: center;
       align-items: center;
     }
 
+    /* Container box for the login form */
     .login-container {
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.9);     /* Semi-transparent white */
       padding: 40px;
       border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);         /* Subtle shadow */
       width: 350px;
       text-align: center;
     }
 
+    /* Heading style inside login box */
     .login-container h2 {
-      color: #00643c;
+      color: #00643c;                                 /* Starbucks green shade */
       margin-bottom: 30px;
     }
 
+    /* Style for both text and password inputs */
     input[type="text"], input[type="password"] {
       width: 100%;
       padding: 12px;
@@ -44,8 +46,9 @@
       border-radius: 8px;
     }
 
+    /* Style for the login button */
     .login-btn {
-      background-color: #5c4033;
+      background-color: #5c4033;                      /* Coffee-brown button */
       color: white;
       border: none;
       padding: 12px 20px;
@@ -56,28 +59,30 @@
       transition: background-color 0.3s ease;
     }
 
+    /* Button hover effect */
     .login-btn:hover {
-      background-color: #4a3228;
+      background-color: #4a3228;                      /* Darker on hover */
     }
 
-  @media (max-width: 480px) {
-    .login-container {
-      margin-top: 30px;  /* Move it closer to top */
+    /* Mobile adjustments */
+    @media (max-width: 480px) {
+      .login-container {
+        margin-top: 30px;                             /* Push it slightly down */
+      }
     }
-  }
-
   </style>
 </head>
 <body>
 
-<div class="login-container">
-  <h2>Login to Starbucks</h2>
-  <form onsubmit="return validateLogin()">
-    <input type="text" id="username" placeholder="Username" required><br>
-    <input type="password" id="password" placeholder="Password" required><br>
-    <button type="submit" class="login-btn">Login</button>
-  </form>
-</div>
+  <!-- Login form container -->
+  <div class="login-container">
+    <h2>Login to Starbucks</h2>
+    <form onsubmit="return validateLogin()"> <!-- JS validation before submit -->
+      <input type="text" id="username" placeholder="Username" required><br>
+      <input type="password" id="password" placeholder="Password" required><br>
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+  </div>
 
 </body>
 </html>
